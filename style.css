@@ -8,6 +8,7 @@ h2 {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -16,7 +17,9 @@ h2 {
     display: flex;
     justify-content: center ;
     align-items: center;
+    max-width: 88rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .flex-column {
@@ -28,6 +31,39 @@ h2 {
     justify-content: center ;
 }
 
-.hidden {
-    display: none;
+.btn {
+    font-size: 50px;
+    font-weight: 300;
+    padding: 10px;
+    margin: 45px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border: 2px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: yellow
+}
+#highscore-btn:hover {
+    box-shadow:  2px white;
+}
+
+#ready-btn {
+    background: blue;
 }
